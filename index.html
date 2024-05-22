@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html style="background: var(--white);" lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mickaël Anderson</title>
+    <!-- Logo Web -->
+    <link rel="shortcut icon" href="./img/LogoA.png" type="image/x-icon">
+    
+    <!-- Bulma -->
+    <link rel="stylesheet" href="./assets/bulma/css/versions/bulma-no-dark-mode.min.css">
+
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.5.2-web/css/all.min.css">
+
+    <!-- Style personalisé -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+    
+    <!-- NAV Bar -->
+    <nav id="nav1" class="navbar is-transparent is-fixed-top" style="background: var(--white);">
+        <div class="navbar-brand">
+            <!-- Logo -->
+            <a class="navbar-item innactive gauche-nav" href="https://bulma.io">
+                <img src="./img/LogoA.png" alt="Anderson">
+                <h2 style="margin-left: 10px; ">Anderson</h2>
+            </a>
+            <!-- Burger -->
+            <div class="navbar-burger js-burger btn-Burger" data-target="navbarExampleTransparentExample">
+                <section class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </section>
+                <section class="close-icon">
+                    <i class="fa-solid fa-angles-up"></i>
+                </section>
+            </div>
+        </div>
+    
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start section-Navigation">
+                <a class="navbar-item espace-nav espace-nav-H " href="https://bulma.io/"> Acceuil </a>
+                <a class="navbar-item espace-nav espace-nav-H" href="https://bulma.io/"> Compétences </a>
+                <a class="navbar-item espace-nav espace-nav-H" href="https://bulma.io/"> Services </a>
+                <!-- dopDown -->
+                <div class="navbar-item has-dropdown espace-nav espace-nav-H nav-DropDown-Reseau"> <!-- class "is-active" mamoka liste -->
+                    <a class="navbar-link" href=" "> Réseau sociaux </a>
+                    <div class="navbar-dropdown is-boxed">
+                        <!-- is-selected =>selection -->
+                        <a class="navbar-item listDropHover" href=" "> Facebook </a>
+                        <a class="navbar-item listDropHover" href=" "> Instagram </a>
+                        <a class="navbar-item listDropHover" href=" "> LinkedIn</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item listDropHover" href=" "> YouTube </a>       
+                    </div>
+                </div>
+
+            </div>
+    
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet"
+                                data-social-target="https://bulma.io" target="_blank"
+                                href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                                <span class="icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+                                <span> Locaux </span>
+                            </a>
+                        </p>
+                        <p class="control">
+                            <a href="" class="navBtn">
+                                <button class="text-light  contact-us ">
+                                    <div class="bgBtnNav">
+    
+                                    </div>
+                                    <div class="soratraNavBtn" style="font-size: 1rem;">
+                                        <i class="fa-solid fa-calendar-plus" style="margin-right: 8px;"></i>
+                                        Résérvation
+                                    </div>
+                                </button>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- navigation Phone -->
+        <div class="phone-navigation">
+            <a class="navbar-item espace-nav espace-nav-H " href="https://bulma.io/"> Acceuil </a>
+            <a class="navbar-item espace-nav espace-nav-H" href="https://bulma.io/"> Compétences </a>
+            <a class="navbar-item espace-nav espace-nav-H" href="https://bulma.io/"> Services </a>
+            <a class="navbar-item espace-nav espace-nav-H" href="https://bulma.io/"> Réseau sociaux </a>
+            <a style="margin-top: 15px; margin-left: 18px;" class="bd-tw-button button" href="">
+                <span class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </span>
+                <span> Locaux </span>
+            </a>
+            <a style="margin-top: 20px;  margin-left: 16px;" href="" class="navBtn">
+                <button class="text-light  contact-us ">
+                    <div class="bgBtnNav">
+
+                    </div>
+                    <div class="soratraNavBtn" style="font-size: 1rem;">
+                        <i class="fa-solid fa-calendar-plus" style="margin-right: 8px;"></i>
+                        Résérvation
+                    </div>
+                </button>
+            </a>
+        
+        </div>
+    </nav>
+
+    <!-- fontAwesome -->
+    <script src="./assets/fontawesome-free-6.5.2-web/js/all.min.js"></script>
+    <!-- Script Personolisée-->
+    <script src="./js/script.js"></script>
+</body>
+</html>

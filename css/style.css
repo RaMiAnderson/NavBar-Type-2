@@ -1,0 +1,105 @@
+#nav1{
+    height: 48px;
+    transition: .4s;
+}
+.gauche-nav h2{
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.espace-nav{
+    margin-left: 20px;
+}
+.section-Navigation{
+    margin-left: 50px;
+}
+.espace-nav-H:hover, .espace-nav-H:hover a{
+    /* background-color: #e5e5e5; */
+    color: var(--colorTheme);
+}
+.listDropHover:hover{
+    background-color: var(--colorTheme) !important;
+    color: white !important;
+}
+
+
+.navBtn button.contact-us{
+    position: relative;
+    padding: 8px 18px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    z-index: 0;
+    overflow: hidden;
+    box-shadow:   0 2px 15px #1e99feab;
+    /* background: linear-gradient(180deg, #60dfcd 0%, #1e9afe 74%); */
+}
+/* background */
+.navBtn button .bgBtnNav{
+    position: absolute;
+    width: 360px ;
+    margin-left: -130px;
+    margin-top: -100px;
+    height: 260px;
+    z-index: 1;
+    transition: .8s;
+    background: linear-gradient(180deg, #60dfcd 0%, #1e9afe 62%);
+}
+.navBtn button .soratraNavBtn{
+    position: relative;
+    color: white;
+    z-index: 2;
+}
+.navBtn button:hover .bgBtnNav{
+    margin-top: -25px;
+    transform: rotate(325deg);
+    transition: .8s;
+    /* background: linear-gradient(315deg, #60dfcd 0%, #1e9afe 74%) .3s; */
+}
+/* Phone Navigation */
+.close-icon{
+    display: none;
+}
+.phone-navigation{
+    display: none;
+}
+
+@media screen and (max-width: 1175px) {
+    body{
+        padding: 0 !important;
+    }
+    nav{
+        padding: 0 !important;
+    }
+    .section-Navigation{
+        margin-left: 0;
+    }
+    .activeToggle #nav1{
+        border-bottom-left-radius: 90px;
+        border-bottom-right-radius: 90px;
+        height: 360px;
+        transition: .6s;
+        overflow: hidden;
+        padding-bottom: 0;
+        box-shadow: 0 2px 20px #adb5bd;
+    }
+    .activeToggle .burger-icon{
+        display: none;
+    }
+    .activeToggle .close-icon{
+        display: block;
+        transition: .6s;
+    }
+    .phone-navigation{
+        display: none;
+    }
+    .activeToggle .phone-navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+}
